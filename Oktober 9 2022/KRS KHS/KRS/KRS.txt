@@ -1,0 +1,27 @@
+judul : Membuat aplikasi KRS
+Programer	: Azmi Jalaluddin Amron
+Modify	: ke 1 pada 16.16 09/10/2022
+
+kamus
+	choice <-- character
+
+deskripsi
+	repeat{
+	output "Tahun Ajaran 2022-2023"
+	output "														JADWAL 1				JADWAL 2				JADWAL 3			"
+	output "NO	KDMK			NAMA MATA KULIAH			SKS	KLPK		STS		HARI, JAM		RUANG		HARI, JAM			RUANG		HARI, JAM	RUANG ABSEN	 "	
+	output "1.	A11.5101	KALKULUS					4	A11.4109	B	SENIN  08.40-10.20	H.4.7		RABU   08.40-10.20	Kulino	-		-	35%"
+	output "2.	A11.5101	DASAR PEMROGRAMAN				4	A11.4109	B	KAMIS  10.20-12.00	H.4.8		SENIN  08.40-10.20	D.2.H		-		-	35%"
+	output "3.	A11.5101	MATEMATIKA DISKRIT			3	A11.4109	B	JUMAT  09.30-12.00	H.4.2		-				-		-		-	35%"
+	output "4.	A11.5101	PEMROGRAMAN BERBASIS WEB		2	A11.4109	B	SELASA 12.30-14.10	D.3.M		-				-		-		-	35%"
+	output "5.	A11.5101	ORGANISASI DAN ARSITEKTUR KOMPUTER	3	A11.4109	B	JUMAT  09.30-12.00	H.4.3		-				-		-		-	35%"
+	output "6.	A11.5101	DASAR DASAR KOMPUTASI			2	A11.4109	B	KAMIS  07.00-08.40	D.2.G		-				-		-		-	35%"
+	output "7.	A11.5101	PENGANTAR TEKNOLOGI INFORMATIKA	2	A11.4MATR	B	-				-		-				-		-		-	35%"
+
+
+	output "Mau lihat KRS lagi ?"
+	input choice
+
+	}until (choice=Y OR choice-y)
+
+	output "Jangan lupa jadwal kuliahnya."

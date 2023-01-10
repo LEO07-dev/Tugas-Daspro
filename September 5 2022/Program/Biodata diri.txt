@@ -1,0 +1,31 @@
+//judul
+//ajar coding buat data diri
+//hai teman-teman
+//nama saya Azmi Jalaluddin Amron
+//Fakultas Ilmu Komputer
+//Prodi Teknik Informatika
+//saya berumur 17 tahun
+//NIM A11.2022.14400
+//saya lahir di Demak, 19 Desember 2004
+//salam kenal semuanya
+
+//kamus
+//-
+
+//deskripsi
+
+    output "Hai teman-teman"
+    output "Ini data diri saya"
+    output "=============================================================="
+    output "Nama               : Azmi Jalaluddin Amron"
+    output "NIM                : A11.2022.14400"
+    output "Fakultas           : Ilmu Komputer"
+    output "Prodi              : Teknik Informatika"
+    output "Tempat/Tgl lahir   : Demak, 19 Desember 2004"
+    output "Jenis Kelamin      : Laki-Laki"
+    output "Alamat             : Kalisusukan No.4"
+    output "   RT/RW           : 007/002" 
+    output "   Kel/Desa        : Bintoro"
+    output "   Kecamatan       : Demak"
+    output "Agama              : Islam"
+    output "=============================================================="

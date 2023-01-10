@@ -1,0 +1,19 @@
+judul
+membuat program kelipatan 6
+Programer	: Azmi Jalaluddin Amron
+Modify	: ke 1 pada 20.38 03/10/2022
+
+kamus
+	h, t, x <-- int
+
+deskripsi
+	output "Di bawah ini adalah bilangan dengan kelipatan 6 di bawah 100."
+	x <-- 1
+	h <-- 6
+	while (h<100) do
+		output "Kelipatan ke " x, " adalah : ", h
+		h <-- h+1
+		t <-- t+h
+		x <-- x+1
+
+	output "Total nilai dari kelipatan 6 kurang dari 100 adalah ", t

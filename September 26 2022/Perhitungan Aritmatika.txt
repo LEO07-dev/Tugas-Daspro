@@ -1,0 +1,43 @@
+judul
+Perhitungan Aritmatika
+Programer	: Azmi Jalaluddin Amron
+Modify	: 24 September 2022
+
+kamus
+	bil11, bil12, hasil1, bil21, bil22, hasil2, bil31, bil32, hasil3, bil41, bil42, hasil4 <-- integer
+	
+
+deskripsi
+	output "Perhitungan Aritmatika"
+	output "A. Perkalian"
+	output "Masukkan angka pertama", input bil11
+	output "Masukkan angka kedua", input bil12
+	hasil1 = bil11 × bil12
+	output "Maka hasil perkaliannya adalah", hasil1
+
+	output "B. Pembagian"
+	output "Masukkan angka pertama", input bil21
+	output "Masukkan angka kedua", input bil22
+	hasil2 = bil21 ÷ bil22
+	output "Maka hasil pembagiannya adalah", input hasil2
+
+	output "C. Pengurangan"
+	output "Masukkan angka pertama", input bil31
+	output "Masukkan angka kedua", input bil32
+	hasil3 = bil31 - bil32
+	output "Maka hasil pengurangannya adalah", input hasil3
+
+	output "D. Penjumlahan"
+	output "Masukkan angka pertama", input bil41
+	output "Masukkan angka kedua", input bil42
+	hasil4 = bil41 + bil42
+	output "Maka hasil penjumlahannya adalah", input hasil4
+	
+	if (hasil4mod2 = 0 ) then
+		output "Termasuk bilangan genap"
+	else
+		output "Termasuk bilangan ganjil"	
+
+	
+
+	

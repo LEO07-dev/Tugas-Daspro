@@ -1,0 +1,84 @@
+judul
+Penjumlahan bilangan 2 variabel
+Programer	: Azmi Jalaluddin Amron
+Modify	: 14 September 2022
+
+kamus
+		x1, y1, h1 <-- integer (x1=variabel pertama yang ke-1, y1=variabel kedua yang ke-1, 
+						h1=hasil dari penjumlahan 2 variabel yang ke-1)
+		x2, y2, h2 <-- integer (x1=variabel pertama yang ke-2, y1=variabel kedua yang ke-2, 
+						h1=hasil dari penjumlahan 2 variabel yang ke-2)
+		x3, y3, h3, a, b <-- integer (x1=variabel pertama yang ke-3, y1=variabel kedua yang ke-3, 
+						h1=hasil dari penjumlahan 2 variabel yang ke-3)
+		x4, y4, h4 <-- integer (x1=variabel pertama yang ke-4, y1=variabel kedua yang ke-4, 
+						h1=hasil dari penjumlahan 2 variabel yang ke-4)
+
+diskripsi
+		output "Latihan penjumlahan"
+		output "Permasalahan 1"
+		output "Budi pinjam 1 pensil dan 1 penghapus dari Nita. A few moments later, 
+		        Budi akan mengembalikan barang yang dipinjam-nya dari si Nita. 
+		        Berapa banyak barang yang harus dikembalikan oleh si Budi?"
+		output "Jawabannya adalah = "
+		x1 = 1 (x1=pensil)
+		y1 = 1 (y1=penghapus)
+		h1 = x1 + y1 (h1=jumlah pensi ditambah penghapus)
+		Output "Budi pertama-tama meminjam ", x1, " pensil dan ", y1, " penghapus, 
+		        	maka banyaknya barang yang harus dikembalikan oleh budi 
+		       	 adalah ", h1, " yaitu : ", x1, " pensil dan ", y1, " penghapus."
+
+		output "Permasalahan 2"
+		output "Dimas mempunyai 2 buah gantungan HP sama persis (couple), dia memberikan 1 
+		        	kepada pacarnya. Berapa banyak gantungan HP yang masih di miliki 
+				oleh Dimas?"
+		output "Mari mencari bersama"
+		output "Banyaknya gantungan HP Dimas sebelumnya adalah " input x2 
+		       (x2=banyak gantungan dimas sebelumnya)
+		output "Jumlah gantungan HP yang diberikan Dimas ke pacarnya adalah" input y2 
+		       (y2=banyak gantungan yang diberikan Dimas kepada pacarnya)
+		h2 = x2 - y2
+		output "Maka sisa gantungan kunci Dimas adalah =" h2 "buah"
+		if (h2=1) then 
+			output "Jawaban kamu benar"
+		else
+			output "Jawaban kamu salah, ayo dong hitung lagi yang bener"
+
+		output "Permasalahan 3"
+		output "Raja ingin membeli 2 bungkus cilok yang dimana harga satu bungkus adalah 
+				Rp5.000,00 dan membeli 1 jus mangga seharga Rp5.000,00 . Raja membawa 
+				uang Rp20.000,00 , berapa sisa uang yang dimiliki oleh Raja setelah 
+				membeli yang diinginkannya tadi?"
+		output "Untuk mencari tahu pertama kita cari tahu berapa total harga barang yang 
+				dibeli oleh raja"
+		output "Pertama cari tahu berapa banyak cilok yang dibeli oleh Raja?" input a
+		x3 = a × 5.000 (x1=total harga cilok)
+		output "Jadi total harga cilok adalah banyak bungkus cilok dikali 
+				harga per-bungkus = Rp" x3 ",00"
+		ouput "Kemudian berapa banyak jus mangga yang dibeli oleh Raja?" input b
+		y3 = b × 5.000 (y1=total harga jus mangga)
+		output "Jadi total harga jus mangga adalah = Rp" y3 ",00"
+		h3 = 20.000 - (x3 + y3)
+		output "Karena uang total Raja adalah Rp20.000,00 maka kembaliannya adalah Rp" h3 ",00" 
+		if (h3 = 5.000) then 
+			output "Benar"
+		else
+			output "Salah"
+
+		output "Permasalahan 4"
+		output "Sophia mempunyai 4 teman wanita yang merupakan sahabat, pada pesta teh dengan 
+				keempat sahabatnya dia membawa 10 kue strawberi. Bagaiman cara Sophia 
+				membagi kue-kue tersebut agar dia dan para sahabatnya mendapatkan jumlah 
+				kue yang sama?"
+		output "Ayo bantu Sophia dalam membagi kue-kuenya!"
+		output "Berapa jumlah kue yang dibawa oleh Sophia? " input x4 ouput " kue"
+		output "Berapa jumlah orang yang akan menerima dan memakan kue dari Sophia termasuk 
+				Sophia sendiri? " input y4 output " gadis"
+		h4 = x4 ÷ y4
+		output "Maka kita bagi jumlah kue dengan jumlah orang dan hasilnya 
+				adalah = " h4 output " per orang"
+		if (h4=2) then
+			output "Terimakasih telah membantu Sophia dalam membagi kue-kuenya"
+		else 
+			output "Tolong hitung lagi dong, Sophia gak mau 
+				kalau ada yang sampai dapat kurang"
+		 

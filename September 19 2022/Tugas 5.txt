@@ -1,0 +1,30 @@
+judul
+Membuat program string/karakter
+Programer	: Azmi Jalaluddin Amron
+Modify	: 20 Sept 2022
+
+kamus
+	N, Asal, hobi, ff, fd, JK, P <-- string
+(N=Nama Panjang, FF=Favorite Food, FD=Favorite Drink)
+(JK=Jenis Kelamin, P=Panggilan)
+	U, A <-- integer
+(U=Umur, A=Anggota Keluarga)
+
+deskripsi
+	output "Masukkan nama panjang anda        :" input N
+	output "Masukkan nama panggilan anda      :" input P
+	output "Masukkan jenis kelamin anda (L/P) :" input JK
+	output "Masukkan asal daerah anda         :" input Asal
+	output "Masukkan hobi anda			:" input Hobi
+	output "Masukkan makanan favorit anda	:" input FF
+	output "Masukkan minuman favorit anda	:" input FD
+	output "Masukkan umur anda			:" input U
+	output "Masukkan jumlah anggota keluarga anda :" input A
+
+	output "Halo everyone, I want to introduce myself, nama saya ", N, ", all of you can call me ", P, "."
+	output "My gender is ", JK, " my age is ", U, " years old."
+	output "My family members are ", A, " orang."
+	output "I'm from ", Asal, "."
+	output "My favorite food is ", ff, "."
+	output "My favorite drink is ", fd, "."
+	output "My hobby is ", hobi, "."

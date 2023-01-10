@@ -1,0 +1,40 @@
+judul
+membuat program lama waktu belajar
+programer	: azmi jalaluddin amron
+modify	: 17 sept 2022
+
+kamus
+	jam1, menit1, detik1, jam2, menit2, detik2, h1, h2, h3, j0, m0, d0 <-- integer	(hj=hasil jam, hm=hasil menit, hd=hasil detik)
+	jam_menit = 60 <-- integer (berapa menit dalam 1 jam)
+	jam_detik = 3600 <-- integer (berapa detik dalam1 jam)
+	menit_detik = 60 <-- integer (berapa detik dalam 1 menit)
+
+diskripsi
+
+	output "Salvados mulai belajar pada jam 20 : 16 : 34 dan selesai belajar pada jam 22 : 30 : 40 . 
+		  Berapa lama waktu yang dibutuhkan oleh Salvados untuk menyelesaikan belajarnya? "
+	output "Pertama ubah semua nya ke detik, kemudian kurangi waktu selesai belajar(sudah dalam detik) dengan mulainya belajar(sudah dalam detik) "
+	jam1		= 20
+	menit1	= 16
+	detik1	= 34
+	h1		= jam1 × jam_detik + menit1 × menit_detik + detik
+	output "Maka jumlah detik pada jam mulai belajar adalah ", h1, " detik."
+	jam2		= 22
+	menit2	= 30
+	detik2	= 40
+	h2		= jam1 × jam_detik + menit2 × menit_detik + detik2
+	output "Maka jumlah detik pada jam selesai belajar adalah = ", h2, " detik."
+	output "Setelah itu kita kurangi jumlah detik selesai belajar dengan jumlah detik mulai belajar."
+	h3 		= h2 - h1
+	output "Hasilnya adalah = ", h3, " detik."
+	output "Mari kita bagi dengan 3600 untuk menentukan ada berapa jam."
+	j0		= h3 ÷ jam_detik
+	output "Hasilnya adalah adalah = ", j0, " jam."
+	output "Selanjutnya kita bagi sisa dari pembagian tadi dengan 60 untuk mencari menit."
+	m0		= h3mod3600 ÷ 60
+	output "Jumlah menit adalah = ", m0, " menit."
+	output "Terakhir kita cari detik."
+	d0		= h3 - j0 + m0 (bisa juga dengan = (h3mod3600)mod60)
+	output "Jumlah detik adalah = ", d0, " detik."
+	
+	

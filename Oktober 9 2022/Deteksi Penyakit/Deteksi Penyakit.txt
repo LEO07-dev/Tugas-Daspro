@@ -1,0 +1,109 @@
+judul : Deteksi Penyakit
+Programer	: Azmi Jalaluddin Amron
+Modify 	: ke 1 pada 11.54 09/10/2022
+
+
+kamus
+	choice <-- character
+	nama, alamat, ttl <-- string
+	g1, g2, g3, g4, g5, g6, g7, g8, g9, g10 <-- integer
+
+deskripsi
+	output "Mendeteksi Penyakit"
+	output "Macam-Macam Gejala"
+	output "===="
+	output "|| 1  = Demam 38°C."
+	output "|| 2  = Batuk kering."
+	output "|| 3  = Sesak napas."
+	output "|| 4  = Nyeri tiba-tiba dan intensif pada daerah bagian atas dari abdomen (perut)."
+	output "|| 5  = Nyeri tiba-tiba dan intensif pada bagian tengah dari abdomen (perut), di bawah tulang dada."
+	output "|| 6  = Nyeri punggung di antara tulang belikat."
+	output "|| 7  = Nyeri pada bahu kanan."
+	output "|| 8  = Mual dan muntah."
+	output "|| 9  = Kolik empedu." {Yyeri yang terjadi sangat hebat dan berlangsung lama.}
+	output "|| 10 = Demam tinggi dan menggigil."
+	output "|| 11 = Warna kulit dan bagian putih pada mata menjadi kuning."
+	output "|| 12 = Nyeri pada bagian punggung, perut, atau area selangkangan." {Pada pria biasanya akan timbul rasa nyeri pada skrotum (buah zakar) atau testikel.}
+	output "|| 13 = Dysuria." {Nyeri saat buang air kecil.}
+	output "|| 14 = Haematuria." {Adanya darah pada urine.}
+	output "|| 15 = Warna urine yang cenderung merah atau kecokelatan."
+	output "|| 16 = Frekuensi berkemih yang meningkat."
+	output "|| 17 = Berkemih dalam jumlah yang lebih sedikit."
+	output "|| 18 = Rasa berkemih yang tidak dapat ditahan."
+	output "|| 19 = Diare."
+	output "|| 20 = Kelelahan yang hebat."
+ 	output "|| 21 = Demam dan menggigil jika terjadi infeksi."
+	output "|| 22 = Suhu tubuh yang naik turun."
+	output "|| 23 = Sakit kepala."
+	output "|| 24 = Berkeringat dingin."
+	output "|| 25 = Nyeri otot."
+	output "|| 26 = Kelelahan mata."
+	output "|| 27 = Buram saat melihat jauh."
+	output "|| 28 = Sakit kepala."
+	output "|| 29 = Menyipitkan mata saat melihat jauh untuk melihat lebih jelas."
+	output "|| 30 = Sulit melihat benda-benda yang jauh dan akan lebih jelas melihat dalam posisi yang lebih dekat."
+	output "|| 31 = Ketegangan pada mata."
+	output "|| 32 = Lebih sering memicingkan mata untuk memperjelas penglihatan."
+	output "|| 33 = Penglihatan kabut saat melihat dari dekat."
+	output "|| 34 = Mata sensitif terhadap cahaya."
+	output "|| 0  = Tidak Ada."
+	output "===="
+
+	output "Nama			: " input nama
+	output "Alamat			: " input alamat
+	output "Tempat, Tanggal lahir	: " input ttl
+
+	repeat {
+	output "Masukkan kode sesuai gejala yang anda alami!"  {Saya akan menggunakan if else}
+	output "Masukkan Gejala 1	: " input g1
+	output "Masukkan Gejala 2	: " input g2
+	output "Masukkan Gejala 3	: " input g3
+	output "Masukkan Gejala 4	: " input g4
+	output "Masukkan Gejala 5	: " input g5
+	output "Masukkan Gejala 6	: " input g6
+	output "Masukkan Gejala 7	: " input g7
+	output "Masukkan Gejala 8	: " input g8
+	output "Masukkan Gejala 9	: " input g9
+	output "Masukkan Gejala 10	: " input g10
+
+	{Jika sudah tidak ada bisa diisikan dengan 0}
+
+	if (g1=1 AND g2=2 AND g3=3) then 
+		output "Anda menderita penyakit COVID-19, PASRAH SAJA."
+	else if (g1=4 AND g2=5 AND g3=6 AND g4=7 AND g5=8 AND g6=9 AND g7=10 AND g8=11)
+		output "Anda menderita Batu Empedu (Gallstone)."
+		{Tindakan pembedahan untuk mengangkat kantung empedu (cholecystectomy).}
+		{Terapi obat-obatan untuk melarutkan batu empedu. Terapi obat (ursodeoxycholic acid) dilakukan untuk membantu melarutkan batu yang sudah terbentuk, namun umumnya batu dapat terbentuk kembali ketika pengobatan dihentikan.}
+		output "Solusinya adalah cholecystectomy dan ursodeoxycholic acid."
+	else if (g1=12 AND g2=13 AND g3=14 AND g4=15 AND g5=16 AND g6=17 AND g7=18 AND g8=8 AND g9=20 AND g10=21)
+		output "Anda menderita Batu Ginjal (Kidney Stone)."
+		output "Solusi : "
+		output "1. Batu ginjal berukuran kecil akan keluar dengan sendirinya melalui saluran urine dalam waktu 48 jam jika asupan cairan yang masuk ke dalam tubuh cukup." 
+		output "2. Jika batu ginjal yang terbentuk berukuran besar, dokter dapat merekomendasikan lithotripsy."
+	else if (g1=22 AND g2=23 AND g3=24 AND g4=8 AND g5=25 AND g6=19)
+		output "Anda menderita Malaria."
+		output "WHO merekomendasikan Artemisinin-based combination therapy (ACT) setidaknya selama 3 hari, yaitu : "
+		output "1. Kombinasi artemether dan lumefantrine."
+		output "2. Kombinasi artesunate dan amodiaquine."
+		output "3. Kombinasi artesunate dan mefloquine."
+		output "4. Kombinasi dihydroartemisinin dan piperaquine."
+		output "5. Kombinasi artesunate + sulfadoxine + pyrimethamine."
+	else if (g1=26 AND g2=27 AND g3=28 AND g4=29 AND g5=30)
+		output "Anda menderita Rabun Jauh (Miopia)."
+		output "Solusi paling umum adalah menggunakan kacamata atau lensa kontak."
+		output "Jika kamu kaya kamu bisa mencoba operasi LASIK."
+	else if (g1=31 AND g2=32 AND g3=33 AND g4=34)
+		output "Anda menderita Rabun Dekat (Hipermetropia)."
+		output "Hipermetropia bisa dikoreksi dengan kacamata, lensa kontak, atau pembedahan."
+		output "Kacamata adalah cara termudah dan teraman untuk memperbaiki hipermetropia."
+		output "Cara lain adalah lensa kontak yang harus dikonsultasika kepada tenaga kesehatan."
+		output "Untuk pembedahan adalah bedah refraksi yang mana harus didiskusikan dengan tenaga ahli profesional untuk mata." 
+
+	output "Mau mencoba lagi?(Y/N)"
+	input choice
+
+	}until (choice=Y OR choice=y)
+
+	output "Makasih udah mau nyoba."
+	
+	
